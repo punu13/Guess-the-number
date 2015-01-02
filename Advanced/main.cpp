@@ -1,7 +1,7 @@
 #include <iostream>
-
+#include "player.h"
 using namespace std;
-int guesst()
+int userGuess()
 {
 	int refG;
 	cout << "guess the number" << endl;
@@ -18,10 +18,13 @@ int main(void)
 {
 	int magic; /* magic number */
 	int guess; /* user's guess */
+
+	player player1;
+	player1.setPlayerName ( );
 	
 	magic = rand(); /* generate the magic number */
 	
-	for (guess = guesst();guess!=result(guess, magic);guess = guesst());
+	for ( guess = userGuess ( ); guess != result ( guess , magic ); guess = userGuess ( ) );
 	
 	cout << "correct answer" << endl;
 	return 0;

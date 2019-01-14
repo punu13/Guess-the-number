@@ -14,7 +14,7 @@ void consoleManip::SetColor ( unsigned short color )
 	SetConsoleTextAttribute ( hcon , color ); 
 }
 
-void consoleManip::myCout ( string Str )
+void consoleManip::DisplayString ( string Str )
 {
 	SetColor ( 10 );
 	cout << Str << endl;

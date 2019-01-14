@@ -9,7 +9,7 @@ class consoleManip
 	
 public:
 	void SetColor ( unsigned short color );
-	void myCout ( string str );
+	void DisplayString ( string str );
 	string myCin (  );
 	consoleManip ( );
 	~consoleManip ( );

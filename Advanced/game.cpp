@@ -8,7 +8,7 @@ using std::endl;
 int  game::userGuess ( )
 {
 	int refG;
-	cos.myCout ( "guess the number" );
+	cos.DisplayString ( "guess the number" );
 	cos.SetColor ( FOREGROUND_RED | FOREGROUND_INTENSITY );
 	cin >> refG;
 	return refG;
@@ -31,7 +31,7 @@ void game::start ( )
 
 	for ( guess = userGuess ( ); guess != result ( guess , magic ); guess = userGuess ( ) );
 
-	cos.myCout( "correct answer" );
+	cos.DisplayString( "correct answer" );
 }
 game::game ( )
 {

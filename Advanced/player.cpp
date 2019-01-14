@@ -5,7 +5,7 @@ using namespace std;
 void player::setPlayerName ( )
 {
 	
-	cos.myCout ( "Please enter a player name" );
+	cos.DisplayString ( "Please enter a player name" );
 	playerName = cos.myCin ( );
 	
 }
